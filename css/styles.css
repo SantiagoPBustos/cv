@@ -1,0 +1,462 @@
+/*Global styles*/
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: white;
+}
+
+h1 {
+    text-align: center;
+    color: #012e46;
+}
+
+/*NavBar styles*/
+header {
+    background-color: #012e46;
+    position: absolute;
+    top: 0;
+    font-weight: 600;
+    width: 100%;
+}
+
+header nav ul {
+    padding-left: 3%;
+    padding-right: 50px;
+    list-style: none;
+}
+
+header nav ul li {
+    float: left;
+}
+
+header nav ul li a {
+    display: block;
+    padding: 20px;
+    color: #94b8d7;
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    background-color: #94b8d7;
+    color: #012e46;
+}
+
+.menu-fixed {
+    background-color: #94b8d7;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    opacity: 90%;
+}
+
+.menu-fixed ul li a {
+    color: #012e46;
+}
+
+.menu-fixed ul li a:hover {
+    background-color: #012e46;
+    color: #94b8d7;
+}
+
+.nav-toggle {
+    background: none;
+    border: none;
+    padding: 10px;
+    line-height: 10px;
+    display: none;
+}
+
+/*Principal Wrapper styles*/
+.wrapper {
+    width: 100%;
+    height: 390px;
+    background-color: #012e46;
+    margin-bottom: 30px;
+    margin-top: 60px;
+}
+
+.container-wrapper {
+    height: 100%;
+    float: left;
+}
+
+.container-descripcion {
+    width: 70%;
+    padding-top: 7%;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: justify;
+    font-size: 18px;
+    color: #94b8d7;
+}
+
+.container-foto {
+    width: 30%;
+    padding: 5%;
+    padding-left: 10%;
+    padding-bottom: 0px;
+}
+
+.container-titulo {
+    width: 100%;
+    height: 120px;
+    float: left;
+    margin-top: 20px;
+}
+
+.duracion {
+    width: 35%;
+    padding: 3%;
+    padding-left: 15%;
+    float: left;
+    font-size: 15px;
+}
+
+.descripcion-formacion {
+    width: 65%;
+    padding: 3%;
+    float: left;
+}
+
+.foto {
+    width: 200px;
+    border-radius: 100%;
+}
+
+/*Skills styles*/
+.competencias {
+    width: 100%;
+    height: 280px;
+}
+
+.container-competencias {
+    margin: auto;
+    width: 90%;
+    padding: 25px 40px;
+}
+
+.container-competencias .swiper {
+    width: 80%;
+    height: 80%;
+}
+
+.container-competencias .swiper-slide {
+    position: relative;
+    text-align: start;
+    font-size: 18px;
+    border-radius: 15px;
+    padding-left: 8%;
+}
+
+.swiper-slide img {
+    display: block;
+    height: 120px;
+    object-fit: cover;
+}
+
+.description-competencias {
+    width: 100%;
+    text-align: center;
+    margin: auto;
+}
+
+/*Training styles*/
+.formacion {
+    width: 100%;
+    height: 820px;
+}
+
+.formacion-academica {
+    width: 100%;
+    height: 340px;
+    background-color: white;
+    margin-top: 50px;
+}
+
+.formacion-complementaria {
+    width: 100%;
+    height: 190px;
+    background-color: white;
+    margin-top: 20px;
+}
+
+.view-certification {
+    color: black;
+}
+
+.view-certification:hover {
+    color: black;
+}
+
+/*Footer styles*/
+.contacto {
+    width: 100%;
+    background-color: #012e46;
+}
+
+.contacto ul {
+    list-style: none;
+    overflow: hidden;
+    margin-left: 30px;
+}
+
+.contacto ul li {
+    width: auto;
+    margin: 0px;
+    float: left;
+}
+
+.contacto ul li a {
+    display: block;
+    padding: 20px;
+    color: #94b8d7;
+    text-decoration: none;
+}
+
+.contacto nav ul li a:hover {
+    background-color: #94b8d7;
+    color: #012e46;
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+
+    /*NavBar styles*/
+    header {
+        padding: 0px;
+    }
+
+    header nav {
+        background-color: #012e46;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav ul {
+        padding-right: 0px;
+        list-style: none;
+        overflow: hidden;
+        display: none;
+    }
+
+    header nav ul li {
+        float: none;
+    }
+
+    header nav ul li a {
+        display: block;
+        padding: 20px;
+        color: #94b8d7;
+        text-decoration: none;
+        text-align: center;
+    }
+
+    .nav-toggle {
+        display: block;
+    }
+
+    .nav-menu {
+        padding: 0px;
+    }
+
+    .nav-menu_visible {
+        display: block;
+    }
+
+    /*Principal Wrapper styles*/
+    .wrapper {
+        width: 100%;
+        height: 590px;
+        background-color: #012e46;
+        margin-bottom: 30px;
+    }
+
+    .container-wrapper {
+        height: 100%;
+        display: inline;
+    }
+
+    .container-foto {
+        padding-left: 32%;
+        width: 100%;
+        height: 250px;
+    }
+
+    /*Skills styles*/
+    .container .swiper-slide {
+        padding-left: 10%;
+    }
+
+    /*Training styles*/
+    .container-descripcion {
+        height: 320px;
+        width: 100%;
+        padding: 7%;
+        padding-left: 10%;
+        padding-right: 10%;
+        text-align: justify;
+        font-size: 18px;
+        color: #94b8d7;
+    }
+
+    .formacion{
+        height: 840px;
+    }
+
+    /*Footer styles*/
+    .contacto ul {
+        margin-left: 5%;
+    }
+
+    .contacto ul li {
+        float: none;
+    }
+
+    .description-competencias {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+
+    /*NavBar styles*/
+    header {
+        padding: 0px;
+    }
+
+    header nav {
+        background-color: #012e46;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav ul {
+        padding-right: 0px;
+        list-style: none;
+        overflow: hidden;
+        display: none;
+    }
+
+    header nav ul li {
+        float: none;
+    }
+
+    header nav ul li a {
+        display: block;
+        padding: 20px;
+        color: #94b8d7;
+        text-decoration: none;
+        text-align: center;
+    }
+
+    .nav-toggle {
+        display: block;
+    }
+
+    .nav-menu {
+        padding: 0px;
+    }
+
+    .nav-menu_visible {
+        display: block;
+    }
+
+    /*Principal Wrapper styles*/
+    .wrapper {
+        width: 100%;
+        height: 720px;
+        background-color: #012e46;
+        margin-bottom: 30px;
+    }
+
+    .container-wrapper {
+        height: 100%;
+        display: inline;
+    }
+
+    .container-foto {
+        padding-left: 20%;
+        width: 100%;
+        height: 250px;
+    }
+
+    /*Skills styles*/
+    .container .swiper-slide {
+        padding-left: 10%;
+    }
+
+    .description-competencias {
+        width: 80%;
+    }
+
+    /*Training styles*/
+    .container-descripcion {
+        height: 320px;
+        width: 100%;
+        padding: 7%;
+        padding-left: 10%;
+        padding-right: 10%;
+        text-align: justify;
+        font-size: 18px;
+        color: #94b8d7;
+    }
+
+    .formacion-academica {
+        height: 370px;
+    }
+
+    .container-titulo {
+        width: 100%;
+        height: 140px;
+        float: left;
+        
+    }
+
+    .duracion {
+        width: 100%;
+        text-align: center;
+        height: 50px;
+        padding: 0px;
+    }
+
+    .descripcion-formacion {
+        width: 100%;
+        text-align: center;
+        padding: 0px 20px;
+    }
+
+    .formacion{
+        height: 900px;
+    }
+
+    /*Footer styles*/
+    .contacto ul {
+        width: 100%;
+        margin-left: 5%;
+    }
+
+    .contacto ul li {
+        float: none;
+    }
+
+    .contacto ul li {
+        padding-right: 0px;
+    }
+    
+    .experiencia{
+        height: 300px;
+    }
+
+    .xp{
+        height: 220px;
+    }
+
+    .exp{
+        height: 160px;
+    }
+}
